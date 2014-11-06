@@ -1,0 +1,308 @@
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+    font-family: 'Oswald', sans-serif;
+    background-color:#1a1a1a;
+}
+
+::selection {
+	background: #ff0056; /* Safari */
+	}
+::-moz-selection {
+	background: #ff0056; /* Firefox */
+}
+
+.no_select{    
+        user-select: none;
+-webkit-user-select: none;
+-moz-user-select: -moz-none;
+}
+
+.slider{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo{
+    background-image: url(/assets/img/iicosystem_logo.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 10em;
+    height:10em;
+    position:fixed;
+    top: 0;
+    left: 10%;
+    background-color: #00adee;
+    z-index:20;
+    
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.wildlogo{
+    
+    z-index:19;
+     position:relative;
+    height:50%;
+    width:50%;
+    display: inline-block;
+    color:white;
+    font-size:72pt;
+    letter-spacing:-6pt;
+    
+    padding:0px 7px 0px 0px;
+    
+    margin-top:5%;
+    margin-left:25%;
+}
+
+.quote{
+    color: #505050;
+    font-size: 48pt;
+    text-align: center;
+    font-weight:400;
+}
+
+.oswald{
+  font-weight:300; 
+}
+
+
+
+.title{
+    z-index:19;
+    position:relative;
+    background-color: #00adee;
+    display: inline-block;
+    color:white;
+    font-size:72pt;
+    letter-spacing:-6pt;
+    
+    
+    padding:0px 7px 0px 0px;
+    
+    margin-top:25%;
+    margin-left:10%;
+    
+    
+}
+
+.whitespace{
+    margin-top:15%;
+}
+
+.grey_section{
+    background-color: #ccc;
+    color:black;
+    padding: 1em 0 1em 0;
+}
+
+.subheading{
+    margin-right: 10%;
+    margin-left:10%;
+    font-size:36pt;
+    color:white;
+    text-align: center;
+}
+
+.definition{
+    position:relative;
+    z-index:19;
+     background-color: #00adee;
+    display: inline-block;
+     color:white;
+    font-size:36pt;
+    letter-spacing:-3pt;
+    
+    padding:0px 7px 0px 0px;
+    
+    margin-top:2%;
+    margin-left:10%;
+}
+
+.content_wrapper{
+    margin-left:10%;
+    margin-right:10%;
+    height:auto;
+    
+}
+
+
+.hex{
+ max-height:13em;   
+}
+
+.three_column{
+    width:32.5%;
+    padding: 1em 0 3em 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.imageHolder {
+    position: relative; 
+    width: 26.8%;
+    max-width: 12em;
+    height: auto; 
+    display: inline-block;
+    vertical-align: center;
+    background-color: #f7f7f7;
+} 
+
+.project .caption { 
+    opacity: 0; 
+    position: absolute; 
+    height:100%; 
+    width: 100%; 
+    top: 0px; 
+    left: 0px;
+    padding: 2px 0px; 
+    color: black; 
+    background: white;
+    text-align: center; 
+} 
+
+.imageHolder:hover .caption{
+    opacity: 0.8;
+}
+
+/*B&W*/
+.bw {
+     -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.project{
+ height: 30%;
+}
+
+.project_logo{
+    height:100%;
+    width:30%;
+    display: inline-block;
+}
+
+.project_text{
+    height:100%;
+    width:50%;
+    text-align: left;
+    vertical-align:top;
+    display: inline-block;
+    margin-left: 10%;
+    color:black;
+    font-size: 24pt;
+    
+}
+
+.footer{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    background-color:#1a1a1a;
+    color: white;
+    
+}
+
+@media only screen and (max-device-width: 1315px), screen and (max-width: 1315px) {
+    .title{
+       font-size:60pt;
+        letter-spacing:-5pt; 
+    }
+    
+    .definition{
+       font-size:24pt;
+        letter-spacing:-2pt; 
+    }
+    
+}
+
+@media only screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
+  .logo{
+        width: 7.5em;
+        height: 7.5em;
+    }
+    
+    .title{
+       font-size:40pt;
+        letter-spacing:-4pt; 
+    }
+    
+    .definition{
+       font-size:18pt;
+        letter-spacing:-1.5pt; 
+    }
+    
+    
+
+}
+
+@media only screen and (max-device-width: 760px), screen and (max-width: 760px) {
+  .logo{
+        width: 5em;
+        height: 5em;
+    }
+    
+    .title{
+       font-size:24pt;
+        letter-spacing:-2pt; 
+    }
+    
+    .definition{
+       font-size:14pt;
+        letter-spacing:-1pt; 
+    }
+   .subheading{
+        font-size:24pt;
+        letter-spacing:-2pt;
+    }
+  
+    .three_column{
+     float:none;
+        width:100%;
+    }
+    
+    .imageHolder {
+        float:none;
+        width:100%;
+    }
+}
+
+@media only screen and (max-device-width: 500px), screen and (max-width: 500px) {
+  .logo{
+        position:relative;
+        background-size:contain;
+        left: 0%;
+        width: 100%;
+        height: 5em;
+    }
+    
+    .title{
+       margin-top:5%;
+        margin-left:10%;
+    }
+    
+    .definition{
+       font-size:14pt;
+        margin-left:10%;
+        margin-right:10%;
+    }
+  
+    
+}
